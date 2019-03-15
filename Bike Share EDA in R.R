@@ -191,7 +191,7 @@ chicago %>% group_by(Gender,`Birth Year`) %>% filter(!is.na(Gender)) %>%
   facet_grid(Gender~.)+
   scale_x_continuous(limits = c(1930,2017), breaks = seq(1930,2007,1))+
   theme(axis.text.x = element_text(angle = 60))+
-  xlab("Birth Year") +  ylab("Count")+ ggtitle("Trip duration in newyork")
+  xlab("Birth Year") +  ylab("Count")+ ggtitle("Trip duration in chicago")
 
 
 newyork %>% group_by(Gender,`Birth Year`) %>% filter(!is.na(Gender)) %>% 
